@@ -1,5 +1,5 @@
 const router = require( 'express' ).Router();
-const db = require( '../models/workout' );
+const db = require( '../../models/workout' );
  console.log("testing")
 // Get all the workout data and add a totalDuration field
 router.get( '/', async ( req, res ) => {
@@ -81,12 +81,7 @@ router.get( '/range', async ( req, res ) => {
 	}
 } );
 
+console.log("testing2")
 
-router.get( '/stats', async ( req, res ) => {
-	res.sendFile( path.join( __dirname, '/../public/stats.html' ) );
-} );
 
-router.get( '/exercise', async ( req, res ) => {
-	res.sendFile( path.join( __dirname, '/../public/exercise.html' ) );
-} );
 module.exports = router;

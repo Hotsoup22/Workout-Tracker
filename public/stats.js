@@ -15,23 +15,23 @@ function calculateTotalWeight(data) {
   return totals;
 }
 
-function populateChart(data) {
-  const durations = data.map(({ totalDuration }) => totalDuration);
-  const pounds = calculateTotalWeight(data);
+function populateChart( data ) {
+	const durations = data.map( ( { totalDuration } ) => totalDuration );
+	const pounds = calculateTotalWeight( data );
 
-  const line = document.querySelector('#canvas').getContext('2d');
-  const bar = document.querySelector('#canvas2').getContext('2d');
+	const line = document.querySelector( '#canvas' ).getContext( '2d' );
+	const bar = document.querySelector( '#canvas2' ).getContext( '2d' );
 
-  const labels = data.map(({ day }) => {
-    const date = new Date(day);
+	const labels = data.map( ( { day } ) => {
+		const date = new Date( day );
 
-    // Use JavaScript's `Intl` object to help format dates
-    return new Intl.DateTimeFormat('en-US', {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric',
-    }).format(date);
-  });
+		// Use JavaScript's `Intl` object to help format dates
+		return new Intl.DateTimeFormat( 'en-US', {
+			weekday: 'short',
+			month: 'short',
+			day: 'numeric',
+		} ).format( date );
+	} );
 
   let lineChart = new Chart(line, {
     type: 'line',
