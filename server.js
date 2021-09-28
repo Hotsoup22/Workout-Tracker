@@ -20,8 +20,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 		useFindAndModify: false
 	});
 
-// // routes
-// app.use(require("./routes/index.js"));
+// routes
+ app.use(require("./routes/workout.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
