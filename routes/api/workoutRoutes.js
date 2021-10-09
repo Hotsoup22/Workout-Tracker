@@ -1,5 +1,5 @@
 const router = require( 'express' ).Router();
-const db = require( '../../models/workout' );
+const db = require( '../../models' );
  console.log("testing")
 // Get all the workout data and add a totalDuration field
 router.get( '/', async ( req, res ) => {
