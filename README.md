@@ -13,7 +13,7 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 ## Usage
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![dashboard](/assets/dashboard-workoutTracker.png)
     ```
 
 ## Contact Info
