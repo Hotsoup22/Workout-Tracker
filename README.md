@@ -12,9 +12,9 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 
 ## Usage
 
-    ```md
-    ![dashboard](/assets/dashboard-workoutTracker.png)
-    ```
+![dashboard](assets/dashboard-workoutTracker.png)
+![dashboard](assets/lastWorkout-workoutTracker.png)
+
 
 ## Contact Info
  - jose22gw@gmail.com
